@@ -10,6 +10,10 @@ Firmware for a 3-axis gantry crane controlled from a phone or laptop over Wi-Fi.
 - **State machine:** init, waiting for homing, ready, moving, test, sensor error and emergency stop. Limit switches trigger the emergency stop at any time.
 - **Web API:** commands arrive at `POST /api/v1/control` and are passed to the motor task through a FreeRTOS queue.
 
+![Schematic](docs/schematic.png)
+
+Full project report (Spanish): [docs/report-es.pdf](docs/report-es.pdf) · Wiring: [docs/wiring-diagram.pdf](docs/wiring-diagram.pdf)
+
 ## Structure
 | File | Role |
 |---|---|
